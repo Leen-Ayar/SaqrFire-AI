@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaqrFire AI - Fire Safety System</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background-color: #f8f9fa; }
+        h1, h2 { color: #ff5733; }
+        .section { margin-bottom: 20px; }
+        .btn { padding: 10px 20px; font-size: 16px; background-color: #ff5733; color: white; border: none; cursor: pointer; }
+        .btn:hover { background-color: #d43f00; }
+    </style>
+</head>
+<body>
+    <h1>SaqrFire AI</h1>
+    <p><strong>AI-Powered Fire Safety System for UAE</strong></p>
+
+    <div class="section">
+        <h2>🔥 AI Assistants for Emergency Response</h2>
+        <p>Voice-guided assistance in Arabic & multiple languages, accessible via smartphones, kiosks, and AR glasses.</p>
+    </div>
+
+    <div class="section">
+        <h2>🚪 Augmented Reality Evacuation Guidance</h2>
+        <p>AR-based fire evacuation app provides dynamic escape routes using real-time GPS & sensor data.</p>
+    </div>
+
+    <div class="section">
+        <h2>📡 IoT-Connected Smart Fire Sensors</h2>
+        <p>AI-driven sensors detect fires, predict spread patterns, and adjust evacuation strategies dynamically.</p>
+    </div>
+
+    <div class="section">
+        <h2>🚀 Activate AR System</h2>
+        <button class="btn" onclick="activateAR()">Activate Now</button>
+        <p id="status">Click to activate AR guidance.</p>
+    </div>
+
+    <script>
+        function activateAR() {
+            document.getElementById("status").innerText = "🔄 Loading AR evacuation guidance...";
+            setTimeout(() => {
+                document.getElementById("status").innerText = "✅ AR System Activated! Follow the evacuation path.";
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
